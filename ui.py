@@ -54,14 +54,13 @@ st.markdown("""
 
 # ── Header ───────────────────────────────────────────────────
 st.title("🧠 Employee Analytics Intelligence")
-st.caption("GenAI Use Case — Quantiphi | Powered by Claude AI")
 
 # ── Dataset summary ──────────────────────────────────────────
 with st.expander("📊 Dataset Overview", expanded=False):
     df = load_data()
     st.code(get_summary(df))
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total Employees", "4,000")
+    col1.metric("Total Employees", "4,001")
     col2.metric("Total Columns",   "109")
     col3.metric("Resigned",        "2,001 (50%)")
     col4.metric("Avg Performance", "9.91")
@@ -97,17 +96,17 @@ with col_btn:
 
 # ── Single question ──────────────────────────────────────────
 if run_one:
-    with st.spinner("Claude is analyzing the data..."):
+    with st.spinner("Analyzing the data..."):
         try:
             question, data_ctx, answer = module.run(q_index)
 
             st.markdown(f"**❓ Question:** {question}")
 
-            with st.expander("📂 Data Context sent to Claude", expanded=False):
+            with st.expander("📂 Data Context", expanded=False):
                 st.markdown(f'<div class="data-box">{data_ctx}</div>',
                             unsafe_allow_html=True)
 
-            st.markdown("**🤖 Claude's Answer:**")
+            st.markdown("**🤖 Analysis:**")
             st.markdown(f'<div class="answer-box">{answer}</div>',
                         unsafe_allow_html=True)
 
