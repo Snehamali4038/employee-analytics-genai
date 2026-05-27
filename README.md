@@ -121,3 +121,10 @@ This ensures all answers are grounded in actual data — not AI guesswork.
 
 ---
 
+## Screenshots
+
+### Main Dashboard
+![Main Dashboard](screenshots/screenshot1.png)
+
+### AI Analysis Output
+![AI Analysis](screenshots/screenshot2.png)
