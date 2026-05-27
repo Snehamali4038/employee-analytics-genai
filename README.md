@@ -115,7 +115,7 @@ This ensures all answers are grounded in actual data — not AI guesswork.
 
 ## Dataset
 
-- 4000 employee records
+- 4001 employee records
 - 109 columns
 - Covers performance, skills, salary, projects, training, attrition and recruitment data
 
